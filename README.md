@@ -1,8 +1,18 @@
-# npm start
-### https://react-digital-clock-ibrhalil.netlify.app/
+# react digital clock v2
 
-![simple-digital-clock-react-project](https://user-images.githubusercontent.com/52247284/134201604-82763549-ce92-4171-84a6-7e5d4427f78b.PNG)
+## localhost install
 
+npm i --legacy-peer-deps
+
+### create certificate for localhost
+
+mkcert localhost
+
+### local start
+
+yarn start
+
+## docker
 
 docker build -t react-clock-app .
 
