@@ -1,0 +1,90 @@
+.digit {
+	position: relative;
+	width: 50px;
+	height: 80px;
+	margin: 5px;
+}
+
+.segment {
+	position: absolute;
+	background-color: #2f0b05;
+	border-radius: 3px;
+	transition: background-color 0.3s;
+}
+
+.segment.on {
+	background-color: #d73c21;
+}
+
+.segment.a,
+.segment.d,
+.segment.g {
+	width: 30px;
+	height: 8px;
+	left: 10px;
+}
+
+.segment.b,
+.segment.c,
+.segment.e,
+.segment.f {
+	width: 8px;
+	height: 30px;
+}
+
+/* Konumlandırmalar */
+/* Üst yatay */
+.segment.a {
+	top: 0;
+}
+
+/* Orta yatay */
+.segment.g {
+	top: 35px;
+}
+
+/* Alt yatay */
+.segment.d {
+	bottom: 0;
+}
+
+/* Üst sol dikey */
+.segment.f {
+	top: 5px;
+	left: 0;
+}
+
+/* Alt sol dikey */
+.segment.e {
+	bottom: 5px;
+	left: 0;
+}
+
+/* Üst sağ dikey */
+.segment.b {
+	top: 5px;
+	right: 0;
+}
+
+/* Alt sağ dikey */
+.segment.c {
+	bottom: 5px;
+	right: 0;
+}
+
+/* Noktalar ve iki nokta */
+.colon {
+	width: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 5px;
+}
+
+.colon-dot {
+	width: 10px;
+	height: 10px;
+	background-color: #d73c21;
+	border-radius: 50%;
+}
