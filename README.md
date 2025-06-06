@@ -16,4 +16,4 @@ yarn start
 
 docker build -t react-clock-app .
 
-docker run -p 3080:80 react-clock-app
+docker run -p 3080:80 --name react-clock-container react-clock-app
