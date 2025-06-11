@@ -1,14 +1,16 @@
 .digit {
 	position: relative;
-	width: 50px;
-	height: 80px;
-	margin: 5px;
+	width: 3.2rem;
+	height: 5.2rem;
+	margin: 0.2rem;
+	box-sizing: border-box;
+	flex-shrink: 0;
 }
 
 .segment {
 	position: absolute;
 	background-color: #2f0b05;
-	border-radius: 3px;
+	border-radius: 0.2rem;
 	transition: background-color 0.3s;
 }
 
@@ -19,72 +21,102 @@
 .segment.a,
 .segment.d,
 .segment.g {
-	width: 30px;
-	height: 8px;
-	left: 10px;
+	width: 60%;
+	height: 0.5rem;
+	left: 20%;
 }
 
 .segment.b,
 .segment.c,
 .segment.e,
 .segment.f {
-	width: 8px;
-	height: 30px;
+	width: 0.5rem;
+	height: 40%;
 }
 
 /* Konumlandırmalar */
-/* Üst yatay */
 .segment.a {
 	top: 0;
 }
-
-/* Orta yatay */
 .segment.g {
-	top: 35px;
+	top: 42%;
 }
-
-/* Alt yatay */
 .segment.d {
 	bottom: 0;
 }
 
-/* Üst sol dikey */
 .segment.f {
-	top: 5px;
+	top: 5%;
 	left: 0;
 }
-
-/* Alt sol dikey */
 .segment.e {
-	bottom: 5px;
+	bottom: 5%;
 	left: 0;
 }
-
-/* Üst sağ dikey */
 .segment.b {
-	top: 5px;
+	top: 5%;
 	right: 0;
 }
-
-/* Alt sağ dikey */
 .segment.c {
-	bottom: 5px;
+	bottom: 5%;
 	right: 0;
 }
 
-/* Noktalar ve iki nokta */
 .colon {
-	width: 10px;
+	width: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin: 0 5px;
+	margin: 0.2rem;
+	box-sizing: border-box;
 }
 
 .colon-dot {
-	width: 10px;
-	height: 10px;
+	width: 0.6rem;
+	height: 0.6rem;
 	background-color: #d73c21;
 	border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+	.digit {
+		width: 2.5rem;
+		height: 4rem;
+		margin: 0.1rem;
+	}
+
+	.segment.a,
+	.segment.d,
+	.segment.g {
+		height: 0.4rem;
+	}
+
+	.segment.b,
+	.segment.c,
+	.segment.e,
+	.segment.f {
+		width: 0.4rem;
+	}
+}
+
+@media (min-width: 1750px) {
+	.digit {
+		width: 6rem;
+		height: 10rem;
+		margin: 0.4rem;
+	}
+
+	.segment.a,
+	.segment.d,
+	.segment.g {
+		height: 1rem;
+	}
+
+	.segment.b,
+	.segment.c,
+	.segment.e,
+	.segment.f {
+		width: 1rem;
+	}
 }
